@@ -1,0 +1,9 @@
+test_tensor 6 0.00131037
+test_cpu_ref_ops 6 0.000837044
+test_codegen_nvrtc 3 0.00131869
+test_ir_build 2 0.00344894
+test_json_import 2 0.0163955
+test_shape_infer 1 0.0052392
+test_interpreter_golden 1 0.00629043
+test_const_fold 1 0.00694954
+---

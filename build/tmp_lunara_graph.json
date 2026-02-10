@@ -1,0 +1,12 @@
+
+{
+  "inputs": [
+    {"name":"x","dtype":"f32","shape":[4,4]},
+    {"name":"b","dtype":"f32","shape":[4,4]}
+  ],
+  "ops": [
+    {"kind":"Add","inputs":["x","b"],"name":"add0"},
+    {"kind":"Relu","inputs":["add0:0"],"name":"relu0"}
+  ],
+  "outputs": ["relu0:0"]
+}

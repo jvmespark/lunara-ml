@@ -1,0 +1,156 @@
+Start testing: Feb 02 21:32 EST
+----------------------------------------------------------
+1/8 Testing: test_tensor
+1/8 Test: test_tensor
+Command: "/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/test_tensor"
+Directory: /mnt/c/Users/James Park/Desktop/software/lunara-ml/build
+"test_tensor" start time: Feb 02 21:32 EST
+Output:
+----------------------------------------------------------
+test_tensor OK
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_tensor" end time: Feb 02 21:32 EST
+"test_tensor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: test_cpu_ref_ops
+2/8 Test: test_cpu_ref_ops
+Command: "/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/test_cpu_ref_ops"
+Directory: /mnt/c/Users/James Park/Desktop/software/lunara-ml/build
+"test_cpu_ref_ops" start time: Feb 02 21:32 EST
+Output:
+----------------------------------------------------------
+test_cpu_ref_ops OK
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_cpu_ref_ops" end time: Feb 02 21:32 EST
+"test_cpu_ref_ops" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: test_ir_build
+3/8 Test: test_ir_build
+Command: "/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/test_ir_build"
+Directory: /mnt/c/Users/James Park/Desktop/software/lunara-ml/build
+"test_ir_build" start time: Feb 02 21:32 EST
+Output:
+----------------------------------------------------------
+=== Lunara IR ===
+Inputs:
+  %0 : tensor[4,4]<f32>  ; name=x
+  %1 : tensor[4,4]<f32>  ; name=b
+Ops:
+  @0 Add  ; name=add0
+    in: %0, %1
+    out: %2:tensor[]<unknown>
+  @1 Relu  ; name=relu0
+    in: %2
+    out: %3:tensor[]<unknown>
+Outputs:
+  %3
+
+test_ir_build OK
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_ir_build" end time: Feb 02 21:32 EST
+"test_ir_build" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: test_json_import
+4/8 Test: test_json_import
+Command: "/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/test_json_import"
+Directory: /mnt/c/Users/James Park/Desktop/software/lunara-ml/build
+"test_json_import" start time: Feb 02 21:32 EST
+Output:
+----------------------------------------------------------
+=== Lunara IR ===
+Inputs:
+  %0 : tensor[4,4]<f32>  ; name=x
+  %1 : tensor[4,4]<f32>  ; name=b
+Ops:
+  @0 Add  ; name=add0
+    in: %0, %1
+    out: %2:tensor[]<unknown>
+  @1 Relu  ; name=relu0
+    in: %2
+    out: %3:tensor[]<unknown>
+Outputs:
+  %3
+
+test_json_import OK
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"test_json_import" end time: Feb 02 21:32 EST
+"test_json_import" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: test_shape_infer
+5/8 Test: test_shape_infer
+Command: "/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/test_shape_infer"
+Directory: /mnt/c/Users/James Park/Desktop/software/lunara-ml/build
+"test_shape_infer" start time: Feb 02 21:32 EST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_shape_infer" end time: Feb 02 21:32 EST
+"test_shape_infer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: test_interpreter_golden
+6/8 Test: test_interpreter_golden
+Command: "/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/test_interpreter_golden"
+Directory: /mnt/c/Users/James Park/Desktop/software/lunara-ml/build
+"test_interpreter_golden" start time: Feb 02 21:32 EST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_interpreter_golden" end time: Feb 02 21:32 EST
+"test_interpreter_golden" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: test_const_fold
+7/8 Test: test_const_fold
+Command: "/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/test_const_fold"
+Directory: /mnt/c/Users/James Park/Desktop/software/lunara-ml/build
+"test_const_fold" start time: Feb 02 21:32 EST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_const_fold" end time: Feb 02 21:32 EST
+"test_const_fold" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: test_codegen_nvrtc
+8/8 Test: test_codegen_nvrtc
+Command: "/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/test_codegen_nvrtc"
+Directory: /mnt/c/Users/James Park/Desktop/software/lunara-ml/build
+"test_codegen_nvrtc" start time: Feb 02 21:32 EST
+Output:
+----------------------------------------------------------
+SKIP (built without CUDA/NVRTC)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_codegen_nvrtc" end time: Feb 02 21:32 EST
+"test_codegen_nvrtc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 02 21:32 EST

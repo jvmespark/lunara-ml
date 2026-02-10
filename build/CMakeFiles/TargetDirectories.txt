@@ -1,0 +1,12 @@
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/lunara.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test_tensor.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test_cpu_ref_ops.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test_ir_build.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test_json_import.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test_shape_infer.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test_interpreter_golden.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test_const_fold.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test_codegen_nvrtc.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/test.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/James Park/Desktop/software/lunara-ml/build/CMakeFiles/rebuild_cache.dir
