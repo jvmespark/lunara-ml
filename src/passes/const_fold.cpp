@@ -88,7 +88,6 @@ lunara::Status ConstFoldPass::run(lunara::ir::Module& m) {
     }
     if (!all_const) continue;
 
-    // must have inferred output type already
     auto out_id = op.outputs[0];
     const auto& outv = g.values[out_id.v];
     if (outv.type.dtype != lunara::ir::DType::f32) continue;

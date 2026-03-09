@@ -21,8 +21,7 @@ static std::string slurp(const std::string& path) {
   return ss.str();
 }
 
-// Extremely small “parser” helpers for our restricted test JSON.
-// This is intentionally minimal. If you later add a real JSON lib, replace this file only.
+// todo: add a real JSON lib, or just get rid of JSON input
 
 static void skip_ws(const std::string& s, std::size_t& i) {
   while (i < s.size() && std::isspace((unsigned char)s[i])) {
@@ -131,7 +130,7 @@ static lunara::Result<std::vector<std::string>> parse_string_array(const std::st
   return lunara::Result<std::vector<std::string>>::Ok(std::move(out));
 }
 
-// Parse a { "k":"v", ... } object into a string map (values are either strings or arrays; we handle both paths manually later)
+// Parse a { "k":"v", ... } object into a string map (values are either strings or arrays; both paths manually handled later)
 static lunara::Status parse_key(const std::string& s, std::size_t& i, std::string& out_key) {
   auto k = parse_string(s, i);
   if (!k.ok()) {

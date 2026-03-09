@@ -49,7 +49,7 @@ int main() {
   // After fold, add0 op becomes Constant
   LUNARA_CHECK(g.op(add0).kind == OpKind::Constant);
 
-  // Should contain data_f32 with 11,22,33,44 (string compare is fine if your writer preserves exact formatting)
+  // Should contain data_f32 with 11,22,33,44
   bool found = false;
   for (auto& a : g.op(add0).attrs) {
     if (a.key == "data_f32") {

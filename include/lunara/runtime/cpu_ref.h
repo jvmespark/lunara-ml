@@ -4,7 +4,7 @@
 
 namespace lunara::rt::cpu {
 
-// All ops are deterministic, contiguous, f32 only for v0.
+// All ops are deterministic, contiguous, f32 only for now
 lunara::Status add(const Tensor& a, const Tensor& b, Tensor& out);
 lunara::Status mul(const Tensor& a, const Tensor& b, Tensor& out);
 lunara::Status relu(const Tensor& a, Tensor& out);

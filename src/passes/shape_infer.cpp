@@ -59,7 +59,7 @@ lunara::Status ShapeInferPass::run(lunara::ir::Module& m) {
       C.type = tt;
     }
 
-    // ignore other ops in v1
+    // todo: more ops
   }
 
   return lunara::Status::Ok();

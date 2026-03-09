@@ -1,6 +1,6 @@
 #pragma once
 #include "lunara/ir/module.h"
-#include "lunara/util/status.h" // reuse your Stage1 Status, or rename later
+#include "lunara/util/status.h"
 
 namespace lunara::ir {
 

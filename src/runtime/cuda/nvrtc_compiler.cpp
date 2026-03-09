@@ -37,7 +37,6 @@ lunara::Result<std::string> NvrtcCompiler::compile_to_ptx(
 
   r = nvrtcCompileProgram(prog, (int)opts.size(), opts.data());
 
-  // Always retrieve log (super helpful)
   size_t logSize = 0;
   nvrtcGetProgramLogSize(prog, &logSize);
   std::string log(logSize, '\0');

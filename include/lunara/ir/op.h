@@ -13,6 +13,7 @@ enum class OpKind : std::uint16_t {
   Mul,
   Relu,
   MatMul,
+  Fusion
 };
 
 inline std::string_view to_string(OpKind k) {
@@ -29,6 +30,8 @@ inline std::string_view to_string(OpKind k) {
       return "Relu";
     case OpKind::MatMul:
       return "MatMul";
+    case OpKing::Fusion:
+      return "Fusion";
     default:
       return "UnknownOp";
   }
@@ -36,7 +39,7 @@ inline std::string_view to_string(OpKind k) {
 
 struct Attribute {
   std::string key;
-  std::string value; // keep v1 simple (stringly typed); upgrade later to variant
+  std::string value; // todo: upgrade later to variant
 };
 
 struct Op {
