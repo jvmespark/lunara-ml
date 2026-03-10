@@ -55,6 +55,10 @@ target_sources(lunara PRIVATE
   src/lunara/ir/printer.cpp
   src/lunara/frontend/json/graph_json_io.cpp
   src/passes/pass_manager.cpp
+  src/codegen/cuda/cuda_emitter.cpp
+  src/passes/fusion.cpp
+  src/runtime/cache/ptx_cache.cpp
+  src/runtime/jit/fusion_jit.cpp
 )
 
 if(LUNARA_ENABLE_CUDA)
@@ -106,6 +110,9 @@ if(LUNARA_ENABLE_TESTS)
   lunara_warnings(test_const_fold)
   add_test(NAME test_const_fold COMMAND test_const_fold)
 
+  add_executable(test_fusion_nvrtc tests/cpu/test_fusion_nvrtc.cpp)
+  target_link_libraries(test_fusion_nvrtc PRIVATE lunara)
+  add_test(NAME test_fusion_nvrtc COMMAND test_fusion_nvrtc)
 
 
   if(LUNARA_ENABLE_CUDA)
